@@ -1,0 +1,31 @@
+# Dotfiles and the toolchain that runs them, managed by mise (replaces GNU Stow).
+#
+# [tools]        what a build machine installs to bake into the offline bundle
+# [dotfiles]     what gets linked into $HOME by `mise dot apply`
+# [settings]     keep the relative links Stow created
+
+[bootstrap.repos]
+"~/.tmux/plugins/tpm" = { url = "https://github.com/tmux-plugins/tpm" }
+
+[tools]
+bun = "latest"
+just = "latest"
+fd = "latest"
+"github:ajeetdsouza/zoxide" = "latest"
+neovim = "latest"
+ripgrep = "latest"
+tmux = "latest"
+uv = "latest"
+starship = "latest"
+eza = "latest"
+opencode = { version = "latest", allow_builds = ["@opencode/cli"] }
+android-sdk = "latest"
+
+[settings]
+dotfiles.relative_symlinks = true
+
+[dotfiles]
+"~/.config/ghostty" = { source = "ghostty/" }
+"~/.config/nvim" = { source = "nvim/" }
+"~/.config/tmux" = { source = "tmux/" }
+"~/.zshrc" = { source = "zsh/dot-zshrc" }

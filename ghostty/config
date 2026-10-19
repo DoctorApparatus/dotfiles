@@ -1,0 +1,63 @@
+theme = dark:cyberdream,light:cyberdream-light
+
+background = #111111
+foreground = #FFFFFF
+cursor-color = #FFD700
+cursor-style = block
+cursor-style-blink = true
+selection-background = #FFD700
+selection-foreground = #000000
+font-size = 11
+adjust-cell-height = 10%
+window-padding-x = 12
+window-padding-y = 12
+window-padding-balance = true
+font-family = MonoLisa
+font-style = Regular
+
+font-feature = calt
+font-feature = liga
+font-feature = clig
+font-feature = ss02
+font-feature = ss07
+font-feature = ss08
+font-feature = ss09
+font-feature = ss11
+font-feature = ss17
+
+# --- LOOK AND FEEL ---
+adjust-cursor-thickness = 3
+adjust-underline-position = 3
+bold-is-bright = true
+cursor-invert-fg-bg = true
+cursor-opacity = 0.7
+link-url = true
+mouse-hide-while-typing = true
+window-vsync = true
+
+# --- CLIPBOARD ---
+clipboard-paste-protection = true
+clipboard-trim-trailing-spaces = true
+copy-on-select = true
+
+# --- SCROLLBACK ---
+scrollback-limit = 4200
+
+# --- SHELL ---
+shell-integration = zsh
+shell-integration-features = cursor,sudo,title
+command = /bin/zsh
+
+# --- WINDOW ---
+window-padding-x = 0
+window-padding-y = 0
+gtk-titlebar = true
+gtk-tabs-location = top
+window-decoration = true
+window-save-state = always
+
+# --- KEYBINDINGS ---
+keybind = ctrl+shift+r=reload_config
+
+# --- ACCESSIBILITY ---
+minimum-contrast = 1.1
