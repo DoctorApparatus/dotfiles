@@ -29,3 +29,4 @@ dotfiles.relative_symlinks = true
 "~/.config/nvim" = { source = "nvim/" }
 "~/.config/tmux" = { source = "tmux/" }
 "~/.zshrc" = { source = "zsh/dot-zshrc" }
+"~/.config/hypr/" = { source = "hypr" }
